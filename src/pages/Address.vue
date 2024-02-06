@@ -50,8 +50,18 @@
             
         <div class="container mx-auto pb-2">
             <div class="join flex justify-between">
-                <button class="w-18 text-sm border-hidden font-semibold"> <b>&lt;</b> BACK </button>
-                <button class="w-18 text-sm border-hidden font-semibold"> NEXT <b>&gt;</b> </button>
+                <button class="w-18 font-semibold flex items-center"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                    BACK 
+                </button>
+                <button class="w-18 font-semibold flex justify-center items-center"> 
+                    NEXT
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -165,6 +175,24 @@
                 </div>
             </div>
              
+            <div class="container mx-auto pb-2">
+                <div class="join flex justify-between">
+                   
+                    <button class="w-18 font-semibold flex items-center"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                        BACK 
+                    </button>
+                    <button class="border text-sm rounded-md text-white bg-black py-2 ps-7 pe-2 w-18 font-semibold flex items-center"> 
+                        PLACE AN ORDER 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="ps-1 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                
+                </div>
+            </div>
         </div>
     </div>
         
@@ -178,7 +206,7 @@
                 <div class="text-6xl font-semibold my-20">ORDER COMFIRMED</div>
  
                 <div class="w-14 h-14 bg-amber-200 rounded-full m-auto flex justify-center aligns-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 stroke-2 text-orange-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 text-orange-400">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                     </svg>
                 </div>
@@ -191,7 +219,7 @@
             </div>
         </div>
     </div>
-    
+
 </template>
 
 <script setup>

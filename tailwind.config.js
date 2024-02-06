@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        "3rem": "3rem",
+      },
+    },
   },
   // theme: {
   //   extend: {},
@@ -12,6 +15,7 @@ export default {
   //   }
   // },
   plugins: [require("daisyui")],
+<<<<<<< HEAD
   daisyui: { 
     themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"] 
     darkTheme: "light", // name of one of the included themes for dark mode 
@@ -24,3 +28,6 @@ export default {
   }, 
 }
 
+=======
+};
+>>>>>>> da4d7373b7f98ffac233a68584079489c35823a9
