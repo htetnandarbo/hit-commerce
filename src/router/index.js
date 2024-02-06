@@ -4,6 +4,8 @@ import { createRouter, createWebHistory } from "vue-router";
 //step1
 const Home = () => import("./../pages/Home.vue");
 const Cart = () => import("./../pages/Cart.vue");
+const Address = () => import("./../pages/Address.vue");
+
 
 //Step2
 const routes=[
@@ -17,6 +19,11 @@ const routes=[
         path:'/cart',
         name:'cart',
         component: Cart
+    },
+    {
+        path:'/address',
+        name:'address',
+        component: Address
     },
     
 ]
