@@ -7,7 +7,7 @@
         <div class="flex flex-col md:flex-row lg:flex-row justify-evenly my-8 md:py-5 lg:py-0">
           <div class="flex">
             <div class="lg:m-0">
-                <img src="/public/images/iphone.png" alt="" class="lg:w-28 w-40 mx-2 lg:m-0">
+                <img :src="card.imageSrc" alt="" class="lg:w-28 w-40 mx-2 lg:m-0">
             </div>
             <div class="lg:pl-3 pt-3 mx-auto lg:m-0 ms-3">
                 <h3 class="font-bold lg:text-base text-xl lg:w-64 w-48 lg:tracking-wider">{{ card.name }}</h3>
@@ -78,21 +78,25 @@ import { ref } from "vue";
 const cards = ref([
   {
     id: 1,
+    imageSrc : '/images/iphone.png',
     name: 'Apple iPhone 14 Pro Max 128Gb Deep Purple',
     serial_number : '#232435456576'
   },
   {
     id: 2,
+    imageSrc : '/images/iphone.png',
     name: 'Apple iPhone 14 Pro Max 128Gb Deep Purple',
     serial_number : '#232435456576'
   },
   {
     id: 3,
+    imageSrc : '/images/iphone.png',
     name: 'Apple iPhone 14 Pro Max 128Gb Deep Purple',
     serial_number : '#232435456576'
   },
   {
     id: 4,
+    imageSrc : '/images/iphone.png',
     name: 'Apple iPhone 14 Pro Max 128Gb Deep Purple',
     serial_number : '#232435456576'
   }
