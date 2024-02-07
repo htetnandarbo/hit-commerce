@@ -1,4 +1,5 @@
 <template>
+
   <div class="container mx-auto px-28 pt-8 pb-3">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div class="grid grid-cols-4">
@@ -115,10 +116,13 @@
         </div>
       </div>
     </div>
-
-    <div class="mt-40">
+  </div>
+  
+  <div class="container-fluid bg-gray-100">
+    <div class="p-10">
+    <div class="container mt-40 mx-auto px-28 py-10 bg-slate-50 rounded-xl">
       <p class="text-3xl font-semibold mb-10">Details</p>
-      <p class="text-slate-400">
+      <p class="text-slate-500">
         Just as a book is judged by its cover, the first thing you notice Lorem
         ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorum iste
         blanditiis rem officiis enim ipsa possimus quia, necessitatibus nam modi
@@ -128,10 +132,127 @@
         blanditiis rem officiis enim ipsa possimus quia, necessitatibus nam modi
         dolores iure voluptate vero asperiores fugit earum quasi ducimus!
       </p>
+      <p class="text-xl font-semibold mt-5 mb-10">Screen</p>
+      <div class="flex flex-row justify-between">
+        <h4 class="font-semibold">Screen diagonal</h4>
+        <h5 class="font-semibold">6.7"</h5>
+      </div>
+      <hr class="mt-3 mb-6"/>
 
-      <p class="text-xl font-semibold mb-10">Screen</p>
+      <div class="flex flex-row justify-between">
+        <h4 class="font-semibold">Screen diagonal</h4>
+        <h5 class="font-semibold">6.7"</h5>
+      </div>
+      <hr class="mt-3 mb-6"/>
+
+      <div class="flex flex-row justify-between">
+        <h4 class="font-semibold">Screen diagonal</h4>
+        <h5 class="font-semibold">6.7"</h5>
+      </div>
+      <hr class="mt-3 mb-6"/>
+
+      <div class="flex flex-row justify-between">
+        <h4 class="font-semibold">Screen diagonal</h4>
+        <h5 class="font-semibold">6.7"</h5>
+      </div>
+      <hr class="mt-3 mb-6"/>
+
+      <div class="flex flex-row justify-between">
+        <h4 class="font-semibold">Additional</h4>
+        <h5 class="font-semibold text-end tracking-wider">
+          <p>Dynamic Island</p>
+          <p>Always-On Display</p>
+          <p>HDR Display</p>
+          <p>True Tone</p>
+          <p>Wide Color (P3)</p>
+        </h5>
+      </div>
+      <hr class="mb-5">
+      <h2 class="font-semibold tracking-wider text-lg">CPU</h2>
+      <div class="flex flex-row justify-between tracking-wider mt-3">
+        <p class="font-semibold text-sm">CPU</p>
+        <p class="font-semibold">A16 Bionic</p>
+      </div>
+      <hr class="mt-3 mb-6"/>
+
+      <div class="flex flex-row justify-between tracking-wider mt-3">
+        <h4 class="font-semibold text-base">Number of cores</h4>
+        <p class="font-semibold">6</p>
+      </div>
+      <hr class="mt-3 mb-6"/>
+
+      <div class="collapse collapse-arrow rounded-none">
+        <button class="btn btn-outline mx-auto w-56 font-semibold">View More</button>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+
+  <div class="container mt-40 mx-auto px-28">
+      <h3 class="tracking-wider font-bold my-10 mx-5 text-2xl">Reviews</h3>
+      <div class="flex">
+      <div class="flex flex-col justify-center items-center w-48 h-48 bg-slate-50 opacity-100 rounded-2xl">
+          <h1 class="font-bold text-6xl text-center items-center">4.8</h1>
+          <p class = "mt-3 text-center items-center mb-3">of 125 reviews</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+      </div>
+
+      <div>
+      <div class="mx-14 flex my-5">
+        <h3 class="text-xl font-semibold tracking-wider w-20">Excellent</h3>
+        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="80" max="100"></progress>
+        <h4>100</h4>
+      </div>
+
+      <div class="mx-14 flex my-5">
+        <h3 class="text-xl font-semibold tracking-wider w-20">Good</h3>
+        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="60" max="100"></progress>
+        <h4>11</h4>
+      </div>
+
+
+      <div class="mx-14 flex my-5">
+        <h3 class="text-xl font-semibold tracking-wider w-20">Average</h3>
+        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="50" max="100"></progress>
+        <h4>3</h4>
+      </div>
+
+      <div class="mx-14 flex my-5">
+        <h3 class="text-xl font-semibold tracking-wider w-20">Below Average</h3>
+        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="30" max="100"></progress>
+        <h4>8</h4>
+      </div>
+
+      <div class="mx-14 flex my-5">
+        <h3 class="text-xl font-semibold tracking-wider w-20">Poor</h3>
+        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="10" max="100"></progress>
+        <h4>1</h4>
+      </div>
+
+      
+      </div>
+    </div>
+
+    <input type="text" placeholder="Leave Comment" class="input input-bordered input-lg w-full" />
+
+    <div class="">
+      <div class="card w-full bg-slate-50 opacity-100">
+          <div class="card-body flex">
+            <img src="/public/images/iphone-14-1.png" alt="" class="w-32 rounded-full border border-red-500">
+
+          </div>
+      </div>
     </div>
   </div>
+
+
 </template>
 
 <script setup></script>
