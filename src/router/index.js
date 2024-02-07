@@ -4,31 +4,8 @@ import { createRouter, createWebHistory } from "vue-router";
 //step1
 const Home = () => import("./../pages/Home.vue");
 const Cart = () => import("./../pages/Cart.vue");
-<<<<<<< HEAD
 const Address = () => import("./../pages/Address.vue");
 
-
-//Step2
-const routes=[
-  
-    {
-        path:'/home',
-        name:'home',
-        component: Home
-    },
-    {
-        path:'/cart',
-        name:'cart',
-        component: Cart
-    },
-    {
-        path:'/address',
-        name:'address',
-        component: Address
-    },
-    
-]
-=======
 const Products = () => import("./../pages/Products.vue");
 const ProductDetails = () => import("./../pages/Product-details.vue");
 
@@ -38,6 +15,11 @@ const routes = [
     path: "/home",
     name: "home",
     component: Home,
+  },
+  {
+    path: "/Address",
+    name: "Address",
+    component: Address,
   },
   {
     path: "/cart",
@@ -55,7 +37,6 @@ const routes = [
     component: ProductDetails,
   },
 ];
->>>>>>> da4d7373b7f98ffac233a68584079489c35823a9
 
 //Step 3
 const router = createRouter({
