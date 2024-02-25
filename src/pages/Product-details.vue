@@ -1,53 +1,53 @@
 <template>
 
-  <div class="container mx-auto px-28 pt-8 pb-3">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div class="grid grid-cols-4">
-        <div class="border">
-          <img src="/public/images/iphone-14.png" class="" />
-          <img src="/public/images/iphone-14.png" class="" />
-          <img src="/public/images/iphone-14.png" class="" />
-          <img src="/public/images/iphone-14.png" class="" />
-        </div>
-        <div class="border col-span-3">
+  <div class="container md:mx-auto md:px-28 md:pt-8 md:pb-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-10">
+      <div class="lg:p-5 lg:mx-auto">
+        <div class="md:h-1/2">
           <img
-            src="/public/images/iphone-14-1.png"
-            class="bg-contain bg-no-repeat bg-center"
+            src="/public/images/iphone2.png"
+            class="bg-contain bg-no-repeat bg-center h-full float-end"
           />
+        </div>
+        <div class="border grid grid-cols-4">
+          <img src="/public/images/iphone2.png" class="" />
+          <img src="/public/images/iphone2.png" class="" />
+          <img src="/public/images/iphone2.png" class="" />
+          <img src="/public/images/iphone2.png" class="" />
         </div>
       </div>
 
-      <div class="">
-        <p class="font-semibold text-3xl">
+      <div class="mt-5 mx-2">
+        <p class="font-semibold text-md md:text-3xl">
           Apple Iphone 14 Pro Max Dual Sim 1TB (Deep Purple) ZA/A
         </p>
         <p class="font-semibold text-3xl py-5">
           $1399 <del class="ps-5 text-lg text-slate-400">$1499</del>
         </p>
 
-        <div class="text-slate-400 text-sm font-medium">
+        <div class="text-slate-400 text-sm font-medium mb-2 tracking-wider">
           Brand:<span> Apple</span>
         </div>
-        <div class="text-slate-400 text-sm font-medium">
+        <div class="text-slate-400 text-sm font-medium mb-2 tracking-wider">
           Type:<span> iPhone 14 Pro Max</span>
         </div>
-        <div class="text-slate-400 text-sm font-medium">
+        <div class="text-slate-400 text-sm font-medium mb-2 tracking-wider">
           SKU:<span> Apple-iPhone-14-Pro-Max-1TB-PP-ZA-A</span>
         </div>
         <div class="text-slate-400 text-sm font-medium">
           Warranty:<span> 1 year</span>
         </div>
 
-        <div class="mt-10 flex">
-          <button class="btn btn-outline rounded-md btn-warning btn-wide me-1">
+        <div class="mt-10 mx-auto md:m-0">
+          <button class="btn btn-outline rounded-md btn-warning btn-md w-40 lg:btn-wide me-1 my-3">
             Add to Wishlist
           </button>
-          <button class="btn btn-warning rounded-md btn-wide">
+          <button class="btn btn-warning rounded-md btn-md w-40 lg:btn-wide">
             Add to Card
           </button>
         </div>
-        <div class="mt-5 flex justify-between">
-          <div class="flex items-center">
+        <div class="mt-5 grid grid-cols-2 md:grid-cols-3">
+          <div class="flex items-center mb-3">
             <div class="bg-slate-100 p-2 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,10 +118,10 @@
     </div>
   </div>
   
-  <div class="container-fluid bg-gray-100">
-    <div class="p-10">
-    <div class="container mt-40 mx-auto px-28 py-10 bg-slate-50 rounded-xl">
-      <p class="text-3xl font-semibold mb-10">Details</p>
+  <div class="container bg-gray-100">
+    <div class="md:p-8 md:px-40">
+    <div class="container mt-20 md:mx-auto lg:mx-auto p-3 md:px-20 md:py-10 bg-slate-50 rounded-xl">
+      <p class="text-3xl font-semibold mb-10 text-center md:text-start lg:text-start">Details</p>
       <p class="text-slate-500">
         Just as a book is judged by its cover, the first thing you notice Lorem
         ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorum iste
@@ -182,16 +182,17 @@
       <hr class="mt-3 mb-6"/>
 
       <div class="collapse collapse-arrow rounded-none">
-        <button class="btn btn-outline mx-auto w-56 font-semibold">View More</button>
-      </div>
+        <button class="btn btn-outline mx-auto w-56 font-semibold hover:bg-transparent hover:text-black">View More</button>
+      </div> 
     </div>
-    
   </div>
   </div>
 
-  <div class="container mt-40 mx-auto px-28">
+  <div class="container mt-40 mx-auto md:px-28" id = "review">
       <h3 class="tracking-wider font-bold my-10 mx-5 text-2xl">Reviews</h3>
-      <div class="flex">
+      <div class="flex flex-col md:flex-row lg:flex-row">
+
+      <div class="md:w-1/5 mx-auto">
       <div class="flex flex-col justify-center items-center w-48 h-48 bg-slate-50 opacity-100 rounded-2xl">
           <h1 class="font-bold text-6xl text-center items-center">4.8</h1>
           <p class = "mt-3 text-center items-center mb-3">of 125 reviews</p>
@@ -203,55 +204,217 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
       </div>
+      </div>
 
-      <div>
-      <div class="mx-14 flex my-5">
+      <div class="md:w-4/5 mx-2 lg:m-0">
+      <div class="md:mx-14 flex my-5">
         <h3 class="text-xl font-semibold tracking-wider w-20">Excellent</h3>
-        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="80" max="100"></progress>
+        <progress class="progress progress-warning w-full mt-3 ml-14 mr-5" value="80" max="100"></progress>
         <h4>100</h4>
       </div>
 
-      <div class="mx-14 flex my-5">
+      <div class="md:mx-14 flex my-5">
         <h3 class="text-xl font-semibold tracking-wider w-20">Good</h3>
-        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="60" max="100"></progress>
+        <progress class="progress progress-warning w-full mt-3 ml-14 mr-5" value="60" max="100"></progress>
         <h4>11</h4>
       </div>
 
-
-      <div class="mx-14 flex my-5">
+      <div class="md:mx-14 flex my-5">
         <h3 class="text-xl font-semibold tracking-wider w-20">Average</h3>
-        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="50" max="100"></progress>
+        <progress class="progress progress-warning w-full mt-3 ml-14 mr-5" value="50" max="100"></progress>
         <h4>3</h4>
       </div>
 
-      <div class="mx-14 flex my-5">
+      <div class="md:mx-14 flex my-5">
         <h3 class="text-xl font-semibold tracking-wider w-20">Below Average</h3>
-        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="30" max="100"></progress>
+        <progress class="progress progress-warning w-full mt-3 ml-14 mr-5" value="30" max="100"></progress>
         <h4>8</h4>
       </div>
 
-      <div class="mx-14 flex my-5">
+      <div class="md:mx-14 flex my-5">
         <h3 class="text-xl font-semibold tracking-wider w-20">Poor</h3>
-        <progress class="progress progress-warning w-96 mt-3 ml-14 mr-5" value="10" max="100"></progress>
+        <progress class="progress progress-warning w-full mt-3 ml-14 mr-5" value="10" max="100"></progress>
         <h4>1</h4>
       </div>
 
-      
       </div>
-    </div>
-
-    <input type="text" placeholder="Leave Comment" class="input input-bordered input-lg w-full" />
-
-    <div class="">
-      <div class="card w-full bg-slate-50 opacity-100">
-          <div class="card-body flex">
-            <img src="/public/images/iphone-14-1.png" alt="" class="w-32 rounded-full border border-red-500">
-
-          </div>
       </div>
-    </div>
   </div>
 
+  <div class = "container">
+    <input type="text" placeholder="Leave Comment" class="input input-bordered input-lg w-full mb-8" />
+  </div>
+
+  <div class="container" id = "comments">
+      <div class="card bg-slate-50 opacity-100 my-5 lg:mx-2 p-1 lg:p-2">
+          <div class=" flex flex-row">
+            <div class="w-20">
+            <div class="rounded-full w-20 h-20">
+                <img src="/public/images/profile-2.jpg" alt="" class="rounded-full w-full h-full object-cover">
+            </div>
+            </div>
+
+            <div class="lg:mx-3 mx-1">
+              <div class="flex justify-between">
+              <div>
+                <h3 class="text-lg font-semibold tracking-wider">John Doe</h3>
+                <div class="rating my-3">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                </div>
+              </div>
+              <h3 class="opacity-50">January 20,2024</h3>
+              </div>
+              <p class="tracking-wider">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic cumque provident enim esse, ducimus, unde at dicta inventore cum quia, velit qui error facilis mollitia. Fuga vitae commodi officiis! list-group-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aut officiis laudantium quam aliquid. Dolore esse aspernatur saepe nihil perspiciatis officia, temporibus nostrum, et, quisquam in pariatur nisi ab deleniti. list-group-item Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam quis, laudantium molestias nisi voluptas hic similique iusto. Magnam repellendus ab soluta fugiat, illum dolore sed eligendi nesciunt assumenda excepturi.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="card bg-slate-50 opacity-100 my-5 lg:mx-2 p-1 lg:p-2">
+          <div class=" flex flex-row">
+            <div class="w-20">
+            <div class="rounded-full w-20 h-20">
+                <img src="/public/images/profile-2.jpg" alt="" class="rounded-full w-full h-full object-cover">
+            </div>
+            </div>
+
+            <div class="lg:mx-3 mx-1">
+              <div class="flex justify-between">
+              <div>
+                <h3 class="text-lg font-semibold tracking-wider">John Doe</h3>
+                <div class="rating my-3">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                </div>
+              </div>
+              <h3 class="opacity-50">January 20,2024</h3>
+              </div>
+              <p class="tracking-wider">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic cumque provident enim esse, ducimus, unde at dicta inventore cum quia, velit qui error facilis mollitia. Fuga vitae commodi officiis! list-group-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aut officiis laudantium quam aliquid. Dolore esse aspernatur saepe nihil perspiciatis officia, temporibus nostrum, et, quisquam in pariatur nisi ab deleniti. list-group-item Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam quis, laudantium molestias nisi voluptas hic similique iusto. Magnam repellendus ab soluta fugiat, illum dolore sed eligendi nesciunt assumenda excepturi.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="card bg-slate-50 opacity-100 my-5 lg:mx-2 p-1 lg:p-2">
+          <div class=" flex flex-row">
+            <div class="w-20">
+            <div class="rounded-full w-20 h-20">
+                <img src="/public/images/profile-2.jpg" alt="" class="rounded-full w-full h-full object-cover">
+            </div>
+            </div>
+
+            <div class="lg:mx-3 mx-1">
+              <div class="flex justify-between">
+              <div>
+                <h3 class="text-lg font-semibold tracking-wider">John Doe</h3>
+                <div class="rating my-3">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                </div>
+              </div>
+              <h3 class="opacity-50">January 20,2024</h3>
+              </div>
+              <p class="tracking-wider">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic cumque provident enim esse, ducimus, unde at dicta inventore cum quia, velit qui error facilis mollitia. Fuga vitae commodi officiis! list-group-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aut officiis laudantium quam aliquid. Dolore esse aspernatur saepe nihil perspiciatis officia, temporibus nostrum, et, quisquam in pariatur nisi ab deleniti. list-group-item Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam quis, laudantium molestias nisi voluptas hic similique iusto. Magnam repellendus ab soluta fugiat, illum dolore sed eligendi nesciunt assumenda excepturi.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="card bg-slate-50 opacity-100 my-5 lg:mx-2 p-1 lg:p-2">
+          <div class=" flex flex-row">
+            <div class="w-20">
+            <div class="rounded-full w-20 h-20">
+                <img src="/public/images/profile-2.jpg" alt="" class="rounded-full w-full h-full object-cover">
+            </div>
+            </div>
+
+            <div class="lg:mx-3 mx-1">
+              <div class="flex justify-between">
+              <div>
+                <h3 class="text-lg font-semibold tracking-wider">John Doe</h3>
+                <div class="rating my-3">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mx-0.5" />
+                </div>
+              </div>
+              <h3 class="opacity-50">January 20,2024</h3>
+              </div>
+              <p class="tracking-wider">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi hic cumque provident enim esse, ducimus, unde at dicta inventore cum quia, velit qui error facilis mollitia. Fuga vitae commodi officiis! list-group-item Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aut officiis laudantium quam aliquid. Dolore esse aspernatur saepe nihil perspiciatis officia, temporibus nostrum, et, quisquam in pariatur nisi ab deleniti. list-group-item Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint totam quis, laudantium molestias nisi voluptas hic similique iusto. Magnam repellendus ab soluta fugiat, illum dolore sed eligendi nesciunt assumenda excepturi.</p>
+            </div>
+          </div>
+      </div>
+      
+  </div>
+
+  <div class = "container md:mt-40 md:mx-auto md:px-28">
+    <h3 class = "text-xl font-bold tracking-wider my-14 text-center md:text-start">Related Products</h3>
+    <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-2"
+        >
+          <div
+            class="card md:border rounded-none w-full md:p-8 flex-col my-5"
+          >
+            <figure class="px-5 rounded-lg border bg-gray-100 flex-1">
+              <img src="/public/images/iphone2.png" alt="Shoes" class="h-40 mt-10 mb-20" />
+            </figure>
+            <div class="md:text-center ps-3 md:py-5">
+              <p class="text-sm font-bold tracking-wider">Apple iPhone14 Pro Max</p>
+              <p class="text-sm font-bold tracking-wider">128GB Deep Purple (MQ9T3RX/A)</p>
+              <p class="text-lg font-bold mt-3">$900</p>
+            </div>
+          </div>
+          
+          <div
+            class="card md:border rounded-none w-full md:p-8 flex-col my-5"
+          >
+            <figure class="px-5 rounded-lg border bg-gray-100 flex-1">
+              <img src="/public/images/iphone2.png" alt="Shoes" class="h-40 mt-10 mb-20" />
+            </figure>
+            <div class="md:text-center ps-3 md:py-5">
+              <p class="text-sm font-bold tracking-wider">Apple iPhone14 Pro Max</p>
+              <p class="text-sm font-bold tracking-wider">128GB Deep Purple (MQ9T3RX/A)</p>
+              <p class="text-lg font-bold mt-3">$900</p>
+            </div>
+          </div> 
+
+          <div
+            class="card md:border rounded-none w-full md:p-8 flex-col my-5"
+          >
+            <figure class="px-5 rounded-lg border bg-gray-100 flex-1">
+              <img src="/public/images/iphone2.png" alt="Shoes" class="h-40 mt-10 mb-20" />
+            </figure>
+            <div class="md:text-center ps-3 md:py-5">
+              <p class="text-sm font-bold tracking-wider">Apple iPhone14 Pro Max</p>
+              <p class="text-sm font-bold tracking-wider">128GB Deep Purple (MQ9T3RX/A)</p>
+              <p class="text-lg font-bold mt-3">$900</p>
+            </div>
+          </div> 
+
+          <div
+            class="card md:border rounded-none w-full md:p-8 flex-col my-5"
+          >
+            <figure class="px-5 rounded-lg border bg-gray-100 flex-1">
+              <img src="/public/images/iphone2.png" alt="Shoes" class="h-40 mt-10 mb-20" />
+            </figure>
+            <div class="md:text-center ps-3 md:py-5">
+              <p class="text-sm font-bold tracking-wider">Apple iPhone14 Pro Max</p>
+              <p class="text-sm font-bold tracking-wider">128GB Deep Purple (MQ9T3RX/A)</p>
+              <p class="text-lg font-bold mt-3">$900</p>
+            </div>
+          </div> 
+
+    </div>
+  </div>
 
 </template>
 
